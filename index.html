@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse App</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <h1 id="title">Morse App</h1>
+    <h3 id="context">Are you the helper or the disabled user?</h3>
+    <button id="helper-btn">Helper</button>
+    <button id="disabled-btn">Disabled</button>
+    <script>
+        addEventListener('DOMContentLoaded', () => {
+            const helperBtn = document.getElementById('helper-btn');
+            const disabledBtn = document.getElementById('disabled-btn');
+
+            helperBtn.addEventListener('click', () => {
+                window.location.href = 'helper.html';
+            });
+
+            disabledBtn.addEventListener('click', () => {
+                window.location.href = 'disabled.html';
+            });
+        });
+    </script>
+</body>
+</html>
