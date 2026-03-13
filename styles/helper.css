@@ -1,0 +1,189 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: #d6d6d6;
+}
+
+body {
+    background-color: black;
+    min-height: 100dvh;
+}
+
+header {
+    border: 2px solid #424242;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    margin: 20px auto;
+}
+
+.header-buttons{
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.connection {
+    border: 2px solid #424242;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px auto;
+}
+
+.connection h3{
+    margin: 0 0 10px 0;
+}
+
+.connection-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.connection-row input {
+    flex: 1;
+    min-width: 0;
+    height: 30px;
+
+    background-color: black;
+    color: #9f9f9f;
+
+    border: 2px solid #9f9f9f;
+    border-radius: 5px;
+
+    padding: 0.5rem;
+    outline: none;
+}
+
+#connect-button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#title {
+    text-align: center;
+    color: #9f9f9f;
+    font-size: 5rem;
+    margin: 0;
+}
+
+#context {
+    text-align: center;
+    color: #9f9f9f;
+    font-size: 2rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+button {
+    margin: 0.75rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: #9f9f9f;
+    background-color: black;
+    border: 2px solid #9f9f9f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+button:focus {
+    background-color: #9f9f9f;
+    color: black;
+}
+
+#dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gray;
+    margin-right: 6px;
+    box-shadow: 0 0 6px currentColor;
+}
+
+.dot-gray { background: gray; }
+.dot-green { background: limegreen; }
+.dot-red { background: red; }
+
+.chat {
+    border: 2px solid #424242;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    margin: 20px auto;
+}
+
+#chat {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.message {
+    background: #111;
+    border: 2px solid #9f9f9f;
+    border-radius: 10px;
+    padding: 10px;
+    color: #9f9f9f;
+    max-width: 80%;
+}
+
+.message.self {
+    align-self: flex-end;
+    background: #032700;
+}
+
+.message-text {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.message-morse {
+    font-size: 1rem;
+    margin-top: 4px;
+    color: #7f7f7f;
+    letter-spacing: 0.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 780px) {
+    header {
+        width: 90%;
+    }
+
+    .connection {
+        width: 90%;
+    }
+
+    .chat {
+        width: 90%;
+    }
+}

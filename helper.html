@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper - Morse App</title>
+    <link rel="stylesheet" href="styles/helper.css">
+</head>
+    <header>
+        <span id="dot"></span>
+        <span id="status">Disconnected</span>
+
+        <div class="header-buttons">
+            <button id="dict-btn">Dictionary</button>
+            <button id="training-btn">Training</button>
+        </div>
+    </header>
+    <div class="connection">
+        <h3>Enter the ip from the disabled user:</h3>
+        <div class="connection-row">
+            <input id="connection-code" placeholder="Enter ip">
+            <button id="connect-button">Connect</button>
+        </div>
+    </div>
+    <section class="chat">
+        <div id="chat"></div>
+        <input id="message-input" placeholder="Type your message here...">
+        <button id="send-button">Send</button>
+    </section>
+
+    <script src="scripts/helper.js"></script>
+</body>
+
+</html>
